@@ -1,0 +1,38 @@
+header {
+    text-align: center;
+}
+img.logo {
+    max-width: 40%;
+    max-height: auto;
+}
+
+/* Click through to other pages */
+nav a {
+    font-family:Arial, Helvetica, sans-serif;
+    color: rgb(2, 2, 2);
+    margin-bottom: 40px;
+    text-decoration: none;
+    font-size: 1.5vw; 
+    
+}
+
+/* logo */
+main {
+    text-align: center;
+}
+
+img.portfolio {
+    max-width: 20%;
+    margin-left: 40%;
+    margin-top: 20px;
+    
+}
+
+img.comingsoon {
+
+    max-width: 40%;
+    max-height: 60%;
+    margin-top: 8%;
+    padding-right: 20px;
+    margin-left: 30%;
+}
