@@ -1,264 +1,188 @@
 /*  HOME PAGE = index.html  */
 
-/* header */
-
-header {
-    text-align: center;
-}
-img.logo {
-    max-width: 40%;
-    width: 150px;
+html, body {
+  height: 100%;
 }
 
-/* Click through to other pages */
-nav a {
-    font-family:Arial, Helvetica, sans-serif;
-    color: rgb(195, 233, 222);
-    margin-bottom: 40px;
-    text-decoration: none;
-    text-size-adjust: 10%;
+body {
+  margin: 0;
+  background-color: white; 
+  font-family: Arial, Helvetica, sans-serif;
+  min-height: 100vh;
 
-}
-a:hover {
-    color: rgb(136, 134, 134);
+  display: flex;
+  flex-direction: column;
 }
 
-
-/* logo */
 main {
-    text-align: center;
+  flex: 1;
 }
 
-img.software {
-    max-width: 15%;
-    margin-bottom: 80px;
+/* ====== Header (dark area) ====== */
+.site-header {
+  background-color: #0a0600;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 32px;
+  letter-spacing: 3px;
 }
 
-img.engineer {
-    max-width: 15%;
-    margin-bottom: 80px;
-    
+.site-name {
+  text-decoration: none;
+  color: white;
+  font-size: 25px;
 }
 
-/* Picture of Halina */
-img.hero {
-    margin-top: 2%;
-    border-radius: 50%;
-    width: 30%;
-    height: auto;
-    max-width: 60%;
-    max-height: auto;
-    border: 8px solid #c3e9de;
-    border-style: outset;
-
-}
- 
-/* Quote */
-div {
-    margin-top: 30px;
-    max-height: 60%;
-    max-width: 40%;
-    margin-left: 30%;
-    font-style: italic;
-    background-color: #dbf5f4;
-    border-radius: 75%;
-    background: radial-gradient(circle at center, #ceefef 0, #f2ffff, white 100%);
-    
+/* ====== Nav ====== */
+.nav-menu {
+  display: flex;
+  gap: 28px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
-p1 {
-    font-size: smaller;
-    padding-bottom: 5%;
-    position: relative;
-    top: 15px;
-    text-size-adjust: 10%;
-
+.nav-menu a {
+  text-decoration: none;
+  color: white;
+  font-size: 12px;
 }
 
-/*@media only screen and (-webkit-min-device-pixel-ratio:3) {
-    main{
-        display:flex;
-        flex-direction:column;
-        align-items:center;
-    }
-    main img{
-        width: 80%;
-        max-width: 80%;
-    }
-    
+.nav-menu a:hover {
+  color: rgb(171, 163, 152);
 }
 
+.nav-cta {
+  padding: 10px 18px;
+  border-radius: 999px;          
+  border: 1px solid white;      
+  background-color: #0a0600;    
+  color: white;
+  font-size: 11px;
+  letter-spacing: 2px;
+  text-decoration: none;
 
-/*================================================================*/
-/*  ABOUT PAGE = about.html  */
-
-header {
-    text-align: center;
+  transition: background-color 0.2s ease,
+              color 0.2s ease,
+              border-color 0.2s ease;
 }
 
-img.logo {
-    max-width: 40%;
-    width: 150px;
+.nav-cta:hover {
+  background-color: white;
+  color: #000000;
+  border-color: white;
 }
 
-
-/* Click through to other pages */
-nav a {
-    font-family:Arial, Helvetica, sans-serif;
-    color: #c3e9de;
-    margin-bottom: 40px;
-    text-decoration: none;
-    font-size: 1.5vw; 
-    
+/* ====== Hero (dark area under header) ====== */
+.hero {
+  background-color: #0a0600; /* matches image background */
+  height: 50vh;           
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-/* logo */
-main {
-    text-align: center;
+.hero-img {
+  height: 100%;
+  width: auto;          /* prevents warping */
+  max-width: 45%;       /* controls how “small” the image appears */
+  display: block;
 }
 
-img.about {
-    max-width: 20%;
-
+/* ====== White content area ====== */
+.content {
+  padding: 60px 20px;
 }
 
-/* Bio paragraph*/
-p {
-    margin-top: 30px;
-    max-height: 60%;
-    max-width: 40%;
-    margin-left: 30%;
-    font-style: italic;
-    text-align: center;
-    background-color: #dbf5f4;
-    border-radius: 75%;
-    background: radial-gradient(circle at center, #ceefef 0, #f2ffff, white 100%);
-    
+/* Me card */
+.me {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 30px 40px 32px;
+  border-radius: 60px;
 }
 
-
-/*================================================================*/
-/*  EXPERIENCE PAGE = experience.html  */
-
-header {
-    text-align: center;
-}
-img.logo {
-    max-width: 40%;
-    max-height: auto;
+.me p {
+  margin: 0;
+  line-height: 1.6;
+  font-family: 'Times', sans-serif;
+  font-size: 1.2rem;
 }
 
-/* Click through to other pages */
-nav a {
-    font-family:Arial, Helvetica, sans-serif;
-    color: rgb(195, 233, 222);
-    margin-bottom: 40px;
-    text-decoration: none;
-    font-size: 1.5vw; 
-    
+/* container to center the button */
+.bottom-cta {
+  display: flex;
+  justify-content: center;
+  margin-top: 1px;
 }
 
-/* logo */
-main {
-    text-align: center;
+/* button itself */
+.about-cta {
+  padding: 14px 28px;
+  border-radius: 999px;
+  border: 2px solid #0a0600;
+  background-color: white;
+  color: #0a0600;
+  text-decoration: none;
+  font-size: 12px;
+  letter-spacing: 2px;
+  transition: background-color 0.25s ease, color 0.25s ease;
 }
 
-h2 {
-    font-family:Arial, Helvetica, sans-serif;
-    color: rgb(195, 233, 222);
-    margin-bottom: 10px;
-    text-decoration: none;
-    font-size: 3vw; 
-
+/* hover: invert */
+.about-cta:hover {
+  background-color: #0a0600;
+  color: white;
 }
 
-div2 {
-    margin-top: 30px;
-    max-height: 60%;
-    max-width: 20%;
-    font-style: italic;
-    text-align: right;
-    background-color: #dbf5f4;
-    border-radius: 75%;
-    background-image: linear-gradient(to right, rgba(255,0,0,0), rgb(255, 255, 255));
+.site-footer {
+  background-color: #0a0600;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  margin: 0;
 }
 
-h3 {
-    margin-top: 70px;
-    font-family:Arial, Helvetica, sans-serif;
-    color: rgb(195, 233, 222);
-    margin-bottom: 20px;
-    text-decoration: none;
-    font-size: 3vw; 
-}
-div3 {
-    margin-top: 30px;
-    max-height: 60%;
-    max-width: 20%;
-    font-style: italic;
-    text-align: right;
-    background-color: #dbf5f4;
-    border-radius: 75%;
-    background: radial-gradient(circle at center, #ddf3f3 0, #f2ffff, white 100%);
-    
+.footer-inner {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 24px;
 }
 
-img.experience {
-    max-width: 20%;
+.site-footer img {
+  width: 22px;
+  height: 22px;
+  opacity: 0.85;
+  transition: opacity 0.2s ease,
+              transform 0.2s ease,
+              filter 0.2s ease;
 }
 
-img.education {
-    max-width: 20%;
+.site-footer img:hover {
+  opacity: 1;
+  filter: drop-shadow(0 0 6px rgba(255, 255, 255, 0.85));
+  transform: scale(1.06);
 }
 
-img.linkedIn {
-    width: 30px;
-    
-}
+/* ====== Optional: nicer behavior on small screens ====== */
+@media (max-width: 768px) {
+  .site-header {
+    padding: 20px 18px;
+    letter-spacing: 2px;
+  }
 
-img.linkedin:hover{
-    color: red;
-}
+  .nav-menu {
+    gap: 16px;
+  }
 
+  .hero {
+    height: 30vh;
+  }
 
-/*================================================================*/
-/*  PORTFOLIO PAGE = portfolio.html  */
-
-header {
-    text-align: center;
-}
-img.logo {
-    max-width: 40%;
-    max-height: auto;
-}
-
-/* Click through to other pages */
-nav a {
-    font-family:Arial, Helvetica, sans-serif;
-    color: rgb(195, 233, 222);
-    margin-bottom: 40px;
-    text-decoration: none;
-    font-size: 1.5vw; 
-    
-}
-
-/* logo */
-main {
-    text-align: center;
-}
-
-img.portfolio {
-    max-width: 20%;
-    margin-left: 40%;
-    margin-top: 20px;
-    
-}
-
-img.comingsoon {
-
-    max-width: 40%;
-    max-height: 60%;
-    margin-top: 8%;
-    padding-right: 20px;
-    margin-left: 30%;
+  .hero-img {
+    max-width: 70%;
+  }
 }

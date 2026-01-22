@@ -1,44 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Halina Cox</title>
-    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="index.css"/>
   </head>
   <body>
-    <header>
-      <h1>
-        <img
-          class="logo"
-          src="H.png"/>
-      </h1>
-      <nav>
-        <a href="index.html">HOME • </a>
-        <a href="./about.html">ABOUT • </a>
-        <a href="./experience.html">EXPERIENCE • </a>
-        <a href="./portfolio.html">PORTFOLIO</a>
+    <header class="site-header">
+      <a class="site-name" href="./index.html">HALINA COX</a>
+      <nav class="site-nav" aria-label="Primary">
+        <ul class="nav-menu">
+          <li><a href="./about.html">ABOUT</a></li>
+          <li><a href="./experience.html">EXPERIENCE</a></li>
+          <li><a href="./portfolio.html">PORTFOLIO</a></li>
+          <li><a href="./work-with-me.html" class="nav-cta">WORK WITH ME</a></li>
+        </ul>
       </nav>
     </header>
     <main>
-      <img
-        class="software"
-        src="software.png"/>
-      <img
-        class="hero"
-        src="./picture of halina.jpeg"/>
-      <img
-        class="engineer"
-        src="engineer.png"/>
-      <div class="center">
-        When I was younger, I thought that the key to success was just hard
-        work. But the real foundation is faith. Faith — the idea that ‘I can do
-        it’ — is the opposite of fear (‘What if I fail?’). And faith creates
-        motivation which in turn leads to commitment, hard work, preparation …
-        and eventually success."
-        <br>
-        <p1>-Howard Twilley</p1>
+      <!-- HERO SECTION (dark background only for top area) -->
+      <section class="hero">
+        <img
+          class="hero-img"
+          src="images/Halina-Headshot.png"
+          alt="Halina Cox headshot"
+        />
+      </section>
+
+      <!-- REST OF PAGE (white background) -->
+      <section class="content">
+        <div class="me">
+          <p>
+            Hi there! I’m a San Francisco Bay Area native and first-generation professional 
+            building a career at the intersection of people, systems, and technology. A UC 
+            Davis alumna with experience across engineering, program management, and operations, 
+            I value work that’s thoughtful, human-centered, and grounded in balance and well-being.
+        </div>
+      </section>
+      <div class="bottom-cta">
+        <a href="./about.html" class="about-cta">MORE ABOUT ME</a>
       </div>
-      <br>
     </main>
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <a href="https://www.linkedin.com/in/halinacox" target="_blank" aria-label="LinkedIn">
+          <img src="images/linkedin.svg" alt="LinkedIn" />
+        </a>
+
+        <a href="https://github.com/HalinaCox" target="_blank" aria-label="GitHub">
+          <img src="images/github.svg" alt="GitHub" />
+        </a>
+      </div>
+    </footer>
   </body>
-  </html>
+</html>
 
