@@ -1,0 +1,79 @@
+header {
+    text-align: center;
+}
+img.logo {
+    max-width: 40%;
+    max-height: auto;
+}
+
+/* Click through to other pages */
+nav a {
+    font-family:Arial, Helvetica, sans-serif;
+    color: rgb(2, 2, 2);
+    margin-bottom: 40px;
+    text-decoration: none;
+    font-size: 1.5vw; 
+    
+}
+
+/* logo */
+main {
+    text-align: center;
+}
+
+h2 {
+    font-family:Arial, Helvetica, sans-serif;
+    color: rgb(2, 2, 2);
+    margin-bottom: 10px;
+    text-decoration: none;
+    font-size: 3vw; 
+
+}
+
+div2 {
+    margin-top: 30px;
+    max-height: 60%;
+    max-width: 20%;
+    font-style: italic;
+    text-align: right;
+    background-color: #dbf5f4;
+    border-radius: 75%;
+    background-image: linear-gradient(to right, rgba(255,0,0,0), rgb(255, 255, 255));
+}
+
+h3 {
+    margin-top: 70px;
+    font-family:Arial, Helvetica, sans-serif;
+    color: rgb(2, 2, 2);
+    margin-bottom: 20px;
+    text-decoration: none;
+    font-size: 3vw; 
+}
+div3 {
+    margin-top: 30px;
+    max-height: 60%;
+    max-width: 20%;
+    font-style: italic;
+    text-align: right;
+    background-color: #dbf5f4;
+    border-radius: 75%;
+    background: radial-gradient(circle at center, #ddf3f3 0, #f2ffff, white 100%);
+    
+}
+
+img.experience {
+    max-width: 20%;
+}
+
+img.education {
+    max-width: 20%;
+}
+
+img.linkedIn {
+    width: 30px;
+    
+}
+
+img.linkedin:hover{
+    color: red;
+}
