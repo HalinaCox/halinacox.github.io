@@ -129,6 +129,11 @@ main {
   margin: 0;
 }
 
+.portfolio-text .portfolio-cta {
+  display: inline-block;
+  margin-top: 20px;
+}
+
 /* ---------- Optional CTA under the section ---------- */
 .bottom-cta {
   display: flex;
