@@ -95,19 +95,16 @@ main {
   padding: 60px 20px;
 }
 
-/* ---------- Portfolio Layout: Video + Text Side-by-Side ---------- */
-.portfolio-inline {
+/* Each project row: video + text side-by-side */
+.portfolio-row {
   display: flex;
   gap: 48px;
-  max-width: var(--max-width);
-  margin: 0 auto;
-  align-items: center;
+  align-items: flex-start;
+  max-width: 1100px;
+  margin: 0 auto 80px; /* space between rows */
 }
 
-/* If you want the video on the RIGHT, uncomment this:
-.portfolio-inline { flex-direction: row-reverse; }
-*/
-
+/* Video column */
 .portfolio-video {
   flex: 1;
 }
@@ -119,6 +116,35 @@ main {
 }
 
 /* Text column */
+.portfolio-title {
+  margin: 0 0 12px;
+  font-size: 2rem;
+  line-height: 1.2;
+}
+
+.portfolio-text {
+  flex: 1;
+  line-height: 1.7;
+  font-size: 1.05rem;
+}
+
+.portfolio-text p {
+  margin: 0 0 16px;
+}
+
+/* Mobile stack */
+@media (max-width: 768px) {
+  .portfolio-row {
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .portfolio-video iframe {
+    height: 260px;
+  }
+}
+
+/* Text column */
 .portfolio-text {
   flex: 1;
   line-height: 1.7;
@@ -127,6 +153,11 @@ main {
 
 .portfolio-text p {
   margin: 0;
+}
+
+.portfolio-text .portfolio-cta {
+  display: inline-block;
+  margin-top: 20px;
 }
 
 /* ---------- Optional CTA under the section ---------- */
@@ -154,10 +185,9 @@ main {
   color: white;
 }
 
-/* ---------- Footer ---------- */
 .site-footer {
-  background-color: var(--bg-dark);
-  height: 80px; /* ~1 inch visually */
+  background-color: #0a0600;
+  height: 80px;
   display: flex;
   align-items: center;
   margin: 0;
@@ -174,13 +204,15 @@ main {
   width: 22px;
   height: 22px;
   opacity: 0.85;
-  transition: opacity 0.2s ease, transform 0.2s ease, filter 0.2s ease;
+  transition: opacity 0.2s ease,
+              transform 0.2s ease,
+              filter 0.2s ease;
 }
 
 .site-footer img:hover {
   opacity: 1;
-  filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.95));
-  transform: scale(1.08);
+  filter: drop-shadow(0 0 6px rgba(255, 255, 255, 0.85));
+  transform: scale(1.06);
 }
 
 /* ---------- Responsive ---------- */
