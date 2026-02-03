@@ -1,24 +1,24 @@
-/*  ABOUT PAGE = about.html  */
+/* ABOUT PAGE = about.html */
 
-html, body {
+html,
+body {
   height: 100%;
 }
 
 body {
   margin: 0;
-  background-color: white; 
-  font-family: Arial, Helvetica, sans-serif;
   min-height: 100vh;
-
   display: flex;
   flex-direction: column;
+  background-color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 main {
   flex: 1;
 }
 
-/* ====== Header (dark area) ====== */
+/* ===== Header ===== */
 .site-header {
   background-color: #0a0600;
   display: flex;
@@ -30,11 +30,10 @@ main {
 
 .site-name {
   text-decoration: none;
-  color: white;
+  color: #fff;
   font-size: 25px;
 }
 
-/* ====== Nav ====== */
 .nav-menu {
   display: flex;
   gap: 28px;
@@ -45,7 +44,7 @@ main {
 
 .nav-menu a {
   text-decoration: none;
-  color: white;
+  color: #fff;
   font-size: 12px;
 }
 
@@ -55,106 +54,63 @@ main {
 
 .nav-cta {
   padding: 10px 18px;
-  border-radius: 999px;          
-  border: 1px solid white;      
-  background-color: #0a0600;    
-  color: white;
+  border-radius: 999px;
+  border: 1px solid #fff;
+  background-color: #0a0600;
+  color: #fff;
   font-size: 11px;
   letter-spacing: 2px;
   text-decoration: none;
-
-  transition: background-color 0.2s ease,
-              color 0.2s ease,
-              border-color 0.2s ease;
+  transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
 }
 
 .nav-cta:hover {
-  background-color: white;
-  color: #000000;
-  border-color: white;
+  background-color: #fff;
+  color: #000;
+  border-color: #fff;
 }
 
-/* About page image */
-.about-inline {
-  display: flex;
-  flex-direction: row-reverse;
-  align-items: center;
-  gap: 48px;
-  max-width: 1000px;
-  margin: 0 auto;
-}
-
-.about-img {
-  width: 320px;
-  max-width: 40%;
-  height: auto;
-  flex-shrink: 0;
-}
-
-.about-text {
-  flex: 1;
-  font-size: 1.05rem;
-  line-height: 1.7;
-}
-
-@media (max-width: 768px) {
-  .about-inline {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .about-img {
-    max-width: 70%;
-  }
-}
-
-/* ====== White content area ====== */
+/* ===== Content ===== */
 .content {
   padding: 60px 20px;
 }
 
-/* About me card */
+.about-inline {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  gap: 40px;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.about-img {
+  width: min(50%, 520px);
+  height: auto;
+  flex-shrink: 0;
+  transform: none;
+}
+
 .about-text {
-  max-width: 1100px;
+  flex: 1;
+  max-width: 780px; /* wider text area */
   margin: 0 auto;
   text-align: center;
-  padding: 30px 40px 32px;
-  border-radius: 60px;
+  padding: 30px 20px 32px;
 }
 
 .about-text p {
   margin: 0;
   line-height: 1.6;
-  font-family: 'Times', sans-serif;
+  font-family: "Times New Roman", Times, serif;
   font-size: 1rem;
 }
 
-/* container to center the button */
-.bottom-cta {
-  display: flex;
-  justify-content: center;
-  margin-top: 1px;
+.about-text p + p {
+  margin-top: 14px;
 }
 
-/* button itself */
-.about-cta {
-  padding: 14px 28px;
-  border-radius: 999px;
-  border: 2px solid #0a0600;
-  background-color: white;
-  color: #0a0600;
-  text-decoration: none;
-  font-size: 12px;
-  letter-spacing: 2px;
-  transition: background-color 0.25s ease, color 0.25s ease;
-}
-
-/* hover: invert */
-.about-cta:hover {
-  background-color: #0a0600;
-  color: white;
-}
-
+/* ===== Footer ===== */
 .site-footer {
   background-color: #0a0600;
   height: 80px;
@@ -174,9 +130,7 @@ main {
   width: 22px;
   height: 22px;
   opacity: 0.85;
-  transition: opacity 0.2s ease,
-              transform 0.2s ease,
-              filter 0.2s ease;
+  transition: opacity 0.2s ease, transform 0.2s ease, filter 0.2s ease;
 }
 
 .site-footer img:hover {
@@ -185,7 +139,7 @@ main {
   transform: scale(1.06);
 }
 
-/* ====== Optional: nicer behavior on small screens ====== */
+/* ===== Mobile ===== */
 @media (max-width: 768px) {
   .site-header {
     padding: 20px 18px;
@@ -196,11 +150,19 @@ main {
     gap: 16px;
   }
 
-  .hero {
-    height: 30vh;
+  .about-inline {
+    flex-direction: column;
+    text-align: center;
+    gap: 48px;
   }
 
-  .hero-img {
-    max-width: 70%;
+  .about-img {
+    width: min(85%, 420px);
+    transform: none;
+  }
+
+  .about-text {
+    max-width: 100%;
+    padding: 20px 12px 24px;
   }
 }
